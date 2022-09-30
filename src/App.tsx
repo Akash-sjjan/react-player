@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import TestVideoPlayer from './TestVideoPlayer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import ReactPlayerTest from "./ReactPlayerTest";
+const url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+
+export const App = () => (
+  <div>
+    {/* <div className="text-lg">Testing the ReactPlayer component</div>
+		<TestVideoPlayer /> */}
+    <div style={{ width: "70vw" }}>
+      <ReactPlayerTest urll={url} />
     </div>
-  );
-}
+  </div>
+);
 
 export default App;
